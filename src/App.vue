@@ -1,14 +1,16 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <router-view/>
 </template>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;300;400;600;700&family=Neucha&display=swap');
+
+* {
+  font-family: 'Exo 2', sans-serif;
+  color: #333;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Exo 2', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -16,7 +18,8 @@
 }
 
 nav {
-  padding: 30px;
+  padding: 10px;
+  display: none;
 
   a {
     font-weight: bold;
@@ -25,6 +28,12 @@ nav {
     &.router-link-exact-active {
       color: #42b983;
     }
+  }
+}
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 }
 </style>
