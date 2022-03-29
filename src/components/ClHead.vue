@@ -13,20 +13,20 @@ export default {
 
 <style scoped>
 .head {
-  height: 32px;
+  height: 24px;
   display: flex;
   justify-content: flex-end;
 
 }
 .title {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 24px;
-  margin-top: 4px;
-  margin-right: 12px;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 6px;
+  margin-right: 8px;
   text-transform: uppercase;
 }
 .logo {
-  height: 32px;
+  height: 24px;
 }
 </style>

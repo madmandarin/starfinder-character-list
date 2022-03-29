@@ -12,6 +12,64 @@
   "deity": "Божество",
   "player": "Игрок",
   "description": "Описание",
-
-
+  "ability-scores": "Характеристики",
+  "str": {
+    "name": "Сила",
+    "label": "СИЛ"
+  },
+  "dex": {
+    "name": "Ловкость",
+    "label": "ЛВК"
+  },
+  "con": {
+    "name": "Выносливость",
+    "label": "ВЫН"
+  },
+  "int": {
+    "name": "Интеллект",
+    "label": "ИНТ"
+  },
+  "wis": {
+    "name": "Мудрость",
+    "label": "МДР"
+  },
+  "cha": {
+    "name": "Харизма",
+    "label": "ХАР"
+  },
+  "score": "Значение",
+  "modifier": "Модиф.",
+  "upgraded-score": "Времен. значение",
+  "upgraded-modifier": "Времен. модиф.",
+  "skills": "Навыки",
+  "skill-ranks-per-level": "Пунктов навыков <br> за уровень",
+  "total": "Всего",
+  "ranks": "Пункты",
+  "class-bonus": "Классовый",
+  "ability-mod": "Мод. характ.",
+  "misc-mod": "Проч. мод.",
+  "acrobatics": "Акробатика (ЛВК)",
+  "athletics": "Атлетика (СИЛ)",
+  "bluff": "Блеф (ХАР)",
+  "computers": "Компьютеры (ИНТ)",
+  "culture": "Культура (ИНТ)",
+  "diplomacy": "Дипломатия (ХАР)",
+  "disguise": "Максировка (ХАР)",
+  "engineering": "Инженерное дело (ИНТ)",
+  "intimidate": "Запугивание (ХАР)",
+  "life-science": "Биологичение <br> науки (ИНТ)",
+  "medicine": "Медицина (ИНТ)",
+  "mysticism": "Мистицизм (МДР)",
+  "perception": "Внимание (МДР)",
+  "physical-science": "Физические науки (ИНТ)",
+  "piloting": "Пилотирование (ЛВК)",
+  "profession": "Профессия <br> (ИНТ, МДР, или ХАР)",
+  "sense-motive": "Проницательность (МДР)",
+  "sleight-of-hand": "Ловкость рук* (ЛВК)",
+  "stealth": "Скрытность* (ЛВК)",
+  "survival": "Выживание (МДР)",
+  "trained-only": "Требуется изучение",
+  "class-skill": "Классовый навык",
+  "armor-check": "Штраф за броню",
+  "skill-notes": "Примечание"
 }

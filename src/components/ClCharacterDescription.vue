@@ -22,7 +22,7 @@
         <ClTextInput class="master" v-model="name" :label="$t('player')"/>
       </div>
     </div>
-    <ClTextArea class="description" :label="$t('description')"/>
+    <ClTextArea class="description" :label="$t('description')" rows="4"/>
   </section>
 </template>
 
@@ -42,11 +42,10 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  margin-top: 20px;
   display: flex;
 }
 .master {
-  flex-basis: 90%;
+  flex-basis: 70%;
 }
 .slave {
   flex-basis: 10%;
@@ -56,6 +55,6 @@ section {
   display: flex;
 }
 .description {
-  margin-top: 14px;
+  margin-top: 6px;
 }
 </style>

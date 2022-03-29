@@ -2,7 +2,7 @@
   <!-- eslint-disable-next-line vuejs-accessibility/label-has-for -->
   <label class="wrapper">
     <input type="text"/>
-    <div class="subLabel">{{ label }}</div>
+    <div class="subLabel" v-if="!disableSubLabel">{{ label }}</div>
   </label>
 </template>
 
@@ -14,6 +14,9 @@ export default {
       type: String,
       default: '',
     },
+    disableSubLabel: {
+      type: Boolean,
+    },
   },
 };
 </script>
@@ -24,11 +27,12 @@ export default {
   flex-grow: 1;
 }
 input {
+  font-family: 'Neucha', 'Exo 2', sans-serif;
   border: none;
   border-bottom: 1px solid #333;
   outline:none;
-  height: 28px;
-  line-height: 28px;
+  height: 18px;
+  line-height: 18px;
   font-size: 16px;
   width: 100%;
   border-radius: 0;
@@ -36,8 +40,8 @@ input {
   box-sizing: border-box;
 }
 .subLabel {
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 9px;
+  line-height: 9px;
   text-align: left;
   text-transform: uppercase;
 }
