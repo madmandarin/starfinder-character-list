@@ -10,6 +10,7 @@ export default {
 
 <style lang="scss" scoped>
 div {
+  align-self: flex-start;
   user-select: none;
   text-align: left;
   font-weight: 600;
@@ -17,12 +18,13 @@ div {
   text-transform: uppercase;
   font-size: 18px;
   color: #e5f7ff;
-  padding: 0 12px 4px 20px;
-  line-height: 18px;
+  padding: 0 20px 4px 20px;
+  line-height: 14px;
   min-width: 180px;
-  max-width: 210px;
+  width: auto;
+  max-width: 270px;
   background: url("@/assets/circle.svg") -55px -20px no-repeat,
-              url("@/assets/circle.svg") 160px -30px no-repeat,
+              url("@/assets/circle.svg") right -50px  top -30px no-repeat,
               linear-gradient(90deg, #08345e 0%, #1466a7 100%);
   position: relative;
   border-top: 2px solid #59bce7;

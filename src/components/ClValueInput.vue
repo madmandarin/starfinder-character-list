@@ -41,7 +41,7 @@ input {
   font-size: 16px;
   box-sizing: border-box;
   padding-top: 6px;
-  border-radius: 5px;
+  border-radius: 4px;
   border: 1px solid #333;
   text-align: center;
   width: 100%;
@@ -50,8 +50,8 @@ input {
     border: 2px solid #333;
   }
   &.big {
-    height: 42px;
-    line-height: 42px;
+    height: 28px;
+    line-height: 28px;
     font-size: 20px;
     padding-top: 3px;
   }
@@ -64,6 +64,7 @@ input {
     line-height: 20px;
     font-size: 16px;
     padding-top: 1px;
+    border-radius: 3px;
   }
   &:disabled {
     background: transparent;

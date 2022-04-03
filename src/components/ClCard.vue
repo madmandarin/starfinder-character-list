@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrCard">
     <ClMainLabel>{{label}}</ClMainLabel>
     <div class="card">
       <slot />
@@ -24,6 +24,10 @@ export default {
 </script>
 
 <style scoped>
+.wrCard {
+  display: flex;
+  flex-direction: column;
+}
 .card {
   border-radius: 0 4px 4px 4px;
   border: 1px solid #333;

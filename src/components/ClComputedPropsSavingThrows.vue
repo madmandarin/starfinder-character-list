@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'ClTable',
+  name: 'ClComputedPropsSavingThrows',
 };
 </script>
 
