@@ -3,6 +3,8 @@
     <ClComputedPropsInitiative />
     <ClComputedPropsHealth />
     <ClComputedPropsArmorClass />
+    <ClComputedPropsSavingThrows />
+    <ClComputedPropsAttackBonuses />
   </div>
 </template>
 
@@ -10,10 +12,14 @@
 import ClComputedPropsInitiative from '@/components/ClComputedPropsInitiative.vue';
 import ClComputedPropsHealth from '@/components/ClComputedPropsHealth.vue';
 import ClComputedPropsArmorClass from '@/components/ClComputedPropsArmorClass.vue';
+import ClComputedPropsSavingThrows from '@/components/ClComputedPropsSavingThrows.vue';
+import ClComputedPropsAttackBonuses from '@/components/ClComputedPropsAttackBonuses.vue';
 
 export default {
   name: 'ClComputedProps',
   components: {
+    ClComputedPropsAttackBonuses,
+    ClComputedPropsSavingThrows,
     ClComputedPropsArmorClass,
     ClComputedPropsHealth,
     ClComputedPropsInitiative,

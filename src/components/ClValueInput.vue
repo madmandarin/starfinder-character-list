@@ -60,8 +60,8 @@ input {
     line-height: 24px;
   }
   &.small {
-    height: 20px;
-    line-height: 20px;
+    height: 22px;
+    line-height: 22px;
     font-size: 16px;
     padding-top: 1px;
     border-radius: 3px;

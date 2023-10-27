@@ -25,9 +25,12 @@
       <tr v-for="skill in trSkills" v-bind:key="skills[skill.id].trTag">
         <td><div class="cross" v-if="skills[skill.id].trainedOnly"></div></td>
         <td><cl-check-box v-model="skills[skill.id].classLearn"/></td>
-        <td class="label">
+        <td class="label" :class="[skills[skill.id].trTag === 'profession' ? 'variable':'']">
           <span v-html="skill.label"></span>
-          <cl-text-input v-if="skills[skill.id].trTag === 'profession'" disableSubLabel/>
+          <cl-text-input
+            class="skillNameInput"
+            size="tiny"
+            v-if="skills[skill.id].trTag === 'profession'" disableSubLabel/>
         </td>
         <td colspan="5">
           <div class="calc">
@@ -278,12 +281,13 @@ export default {
   }),
 };
 </script>
-
+<style>
+</style>
 <style lang="scss" scoped>
 .skillsBlock {
   box-sizing: border-box;
   margin-top: 6px;
-  margin-right: 5px;
+  margin-right: 10px;
   .row {
     display: flex;
     justify-content: space-between;
@@ -309,6 +313,7 @@ export default {
   }
   .skills {
     margin-top: 2px;
+    width: 100%;
     th {
       font-size: 8px;
       vertical-align: bottom;
@@ -344,14 +349,19 @@ export default {
         text-align: left;
         font-size: 10px;
         text-transform: uppercase;
+        vertical-align: middle;
+        &.variable {
+          padding-bottom: 4px;
+        }
       }
       .calc {
         display: flex;
         justify-content: center;
+        margin-bottom: 2px;
         .input {
           box-sizing: border-box;
           width: 36px;
-          padding: 0 4px;
+          padding: 0 1px;
         }
       }
     }

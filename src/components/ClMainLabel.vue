@@ -16,7 +16,7 @@ div {
   font-weight: 600;
   font-stretch: 150%;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 14px;
   color: #e5f7ff;
   padding: 0 20px 4px 20px;
   line-height: 14px;

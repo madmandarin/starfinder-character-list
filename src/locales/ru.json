@@ -89,5 +89,20 @@
   "kinetic-armor-class": "Кинетический <br> класс брони",
   "ac-vs-combat-maneuvers": "КБ против <br> боевых манёвров",
   "dr": "СУ",
-  "resistances": "Устойчивости"
+  "resistances": "Устойчивости",
+  "saving-throws": "Испытания",
+  "base": "Базовый",
+  "fortitude": "стойкость",
+  "reflex": "реакция",
+  "will": "воля",
+  "attack-bonuses": "модификаторы атаки",
+  "bab": {
+    "label": "БМА",
+    "name": "БАЗОВЫЙ МОДИФИКАТОР АТАКИ"
+  },
+  "mod-label": "мод.",
+  "melee-attack": "в ближнем бою",
+  "ranger-attack": "дистанционная",
+  "thrown-attack": "метательным оружием",
+  "weapons": "оружие"
 }

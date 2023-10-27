@@ -8,7 +8,10 @@
           <ClBasePropsAbility />
           <ClBasePropsSkills />
         </div>
-        <cl-computed-props class="col" />
+        <div class="col">
+          <ClComputedProps/>
+        </div>
+
       </div>
     </ClA4Page>
   </div>
