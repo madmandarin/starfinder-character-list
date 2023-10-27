@@ -123,5 +123,16 @@
   "capacity": "нагрузка",
   "unencumbered": "нормальная",
   "encumbered": "нагружен",
-  "overburdened": "перегружен"
+  "overburdened": "перегружен",
+  "spells": "заклинания",
+  "spell-school": "школа",
+  "spell-casting-time": "время сотворения",
+  "spell-range": "Дистанция",
+  "spell-targets": "цель",
+  "spell-duration": "длит.",
+  "spell-saving-throw": "испытание",
+  "spell-resistance": "устоичовость к магии",
+  "spell-knows": "известно",
+  "spell-per-day": "в день",
+  "spell-slot-used": "потрачено"
 }

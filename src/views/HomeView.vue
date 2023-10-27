@@ -28,6 +28,10 @@
         </div>
       </div>
     </ClA4Page>
+    <ClA4Page>
+      <ClHead />
+      <ClSpells />
+    </ClA4Page>
   </div>
 </template>
 
@@ -45,10 +49,12 @@ import ClSpecificSkills from '@/components/ClSpecificSkills.vue';
 import ClFeats from '@/components/ClFeats.vue';
 import ClLanguage from '@/components/ClLanguage.vue';
 import ClInventory from '@/components/ClInventory.vue';
+import ClSpells from '@/components/ClSpells.vue';
 
 export default {
   name: 'HomeView',
   components: {
+    ClSpells,
     ClInventory,
     ClLanguage,
     ClFeats,
