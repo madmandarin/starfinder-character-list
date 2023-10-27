@@ -1,7 +1,7 @@
 <template>
   <!-- eslint-disable-next-line vuejs-accessibility/label-has-for -->
   <label class="wrapper">
-    <input type="text" :class="[size]"/>
+    <input type="text" :class="[size, textPosition, borderLess ? 'borderLess':'']"/>
     <div class="subLabel" v-if="!disableSubLabel">{{ label }}</div>
   </label>
 </template>
@@ -17,11 +17,21 @@ export default {
     disableSubLabel: {
       type: Boolean,
     },
+    borderLess: {
+      type: Boolean,
+    },
     size: {
       type: String,
       default: 'medium',
       validator(value) {
         return ['tiny', 'medium'].includes(value);
+      },
+    },
+    textPosition: {
+      type: String,
+      default: 'start',
+      validator(value) {
+        return ['start', 'center', 'end'].includes(value);
       },
     },
   },
@@ -30,7 +40,7 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
-  margin: 0 4px;
+  margin: 0px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -51,6 +61,18 @@ input {
     font-size: 12px;
     line-height: 14px;
     height: 15px;
+  }
+  &.borderLess {
+    border-bottom: none;
+  }
+  &.start {
+    text-align: left;
+  }
+  &.center {
+    text-align: center;
+  }
+  &.end {
+    text-align: right;
   }
 }
 .subLabel {

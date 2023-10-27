@@ -48,7 +48,7 @@
       <cl-check-box :model-value="true"/>{{ $t('class-skill') }}
       *{{ $t('armor-check') }}
     </div>
-    <cl-text-area :label="$t('skill-notes')" rows="3" inline-label/>
+    <cl-text-area :label="$t('skill-notes')" rows="4" inline-label/>
   </div>
 </template>
 

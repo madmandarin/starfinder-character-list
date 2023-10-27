@@ -88,7 +88,7 @@ export default {
   }
 }
 .statLabel {
-  background: black;
+  background: #333;
   color: white;
   font-weight: 600;
   font-size: 16px;

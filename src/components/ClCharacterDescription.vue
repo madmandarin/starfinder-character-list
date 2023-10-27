@@ -3,23 +3,23 @@
     <div class="master">
       <div class="row">
         <ClMainLabel>{{ $t('name') }}</ClMainLabel>
-        <ClTextInput v-model="name"/>
+        <ClTextInput class="text" v-model="name"/>
       </div>
       <div class="row">
-        <ClTextInput class="master" v-model="name" :label="$t('class-level')"/>
-        <ClTextInput v-model="name" :label="$t('race')"/>
-        <ClTextInput v-model="name" :label="$t('theme')"/>
+        <ClTextInput class="text master" v-model="name" :label="$t('class-level')"/>
+        <ClTextInput class="text" v-model="name" :label="$t('race')"/>
+        <ClTextInput class="text" v-model="name" :label="$t('theme')"/>
       </div>
       <div class="row">
-        <ClTextInput v-model="name" :label="$t('size')"/>
-        <ClTextInput v-model="name" :label="$t('speed')"/>
-        <ClTextInput class="slave" v-model="name" :label="$t('gender')"/>
-        <ClTextInput class="master" v-model="name" :label="$t('home-world')"/>
+        <ClTextInput class="text" v-model="name" :label="$t('size')"/>
+        <ClTextInput class="text" v-model="name" :label="$t('speed')"/>
+        <ClTextInput class="text slave" v-model="name" :label="$t('gender')"/>
+        <ClTextInput class="text master" v-model="name" :label="$t('home-world')"/>
       </div>
       <div class="row">
-        <ClTextInput v-model="name" :label="$t('alignment')"/>
-        <ClTextInput class="master" v-model="name" :label="$t('deity')"/>
-        <ClTextInput class="master" v-model="name" :label="$t('player')"/>
+        <ClTextInput class="text" v-model="name" :label="$t('alignment')"/>
+        <ClTextInput class="text master" v-model="name" :label="$t('deity')"/>
+        <ClTextInput class="text master" v-model="name" :label="$t('player')"/>
       </div>
     </div>
     <ClTextArea class="description" :label="$t('description')" rows="4"/>
@@ -43,6 +43,9 @@ export default {
 <style lang="scss" scoped>
 section {
   display: flex;
+}
+.text {
+  margin: 0 4px;
 }
 .master {
   flex-basis: 70%;
