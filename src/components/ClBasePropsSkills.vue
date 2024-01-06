@@ -91,7 +91,7 @@ export default {
       {
         trTag: 'acrobatics',
         trainedOnly: false,
-        classLearn: true,
+        classLearn: false,
         ranks: undefined,
         classBonus: undefined,
         abilityMod: undefined,

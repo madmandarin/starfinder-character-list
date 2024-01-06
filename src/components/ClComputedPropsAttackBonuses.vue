@@ -32,7 +32,7 @@
           <th></th>
           <th>{{$t('bab.label')}}</th>
           <th></th>
-          <th>{{$t('mod-label')}} {{$t('str.label')}}</th>
+          <th>{{$t('mod-label')}} {{$t('dex.label')}}</th>
           <th></th>
           <th>{{$t('misc-mod')}}</th>
         </tr>
